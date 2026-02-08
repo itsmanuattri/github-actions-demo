@@ -10,5 +10,10 @@ env:
 jobs:
   example:
     runs-on: ubuntu-latest
+    # steps:
+    #   - run: echo "App environment is $APP_ENV"
     steps:
-      - run: echo "App environment is $APP_ENV"
+    - name: Print stage variable
+    run: echo "Stage = $STAGE"
+    env:
+      STAGE: test
