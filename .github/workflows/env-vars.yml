@@ -14,6 +14,6 @@ jobs:
     #   - run: echo "App environment is $APP_ENV"
     steps:
     - name: Print stage variable
-    run: echo "Stage = $STAGE"
+      run: echo "Stage = $STAGE"
     env:
       STAGE: test
